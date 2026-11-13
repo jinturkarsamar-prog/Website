@@ -3,6 +3,7 @@ import { BookOpen, Menu, X, MapPin, Phone, Mail, Instagram, Facebook, Twitter, S
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import clsx from "clsx";
+import FAQ from "./FAQ";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -137,6 +138,9 @@ export default function Layout() {
         </AnimatePresence>
       </main>
 
+      {/* FAQ Section */}
+      <FAQ />
+
       {/* Footer */}
       <footer className="relative bg-[#0F172A] text-slate-300 py-16 border-t border-slate-800 overflow-hidden">
         {/* Decorative Background Blur */}
@@ -179,6 +183,7 @@ export default function Layout() {
                 <li><Link to="/contact" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">Become a Distributor</Link></li>
                 <li><Link to="/contact" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">Bulk Inquiry</Link></li>
                 <li><Link to="/contact" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">Contact Sales</Link></li>
+                <li><a href="#faq" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">FAQs</a></li>
               </ul>
             </div>
 
